@@ -39,3 +39,11 @@ This project uses several services that are not HIPAA-compliant by default:
 - GitHub OAuth - Not HIPAA compliant
 - Vercel Postgres/KV/Blob Storage - Not HIPAA compliant
 - NextAuth.js - Would need special configuration for HIPAA compliance
+
+
+<!---
+Slides from:
+https://portal.gdc.cancer.gov/projects/TCGA-BRCA
+
+
+---->
