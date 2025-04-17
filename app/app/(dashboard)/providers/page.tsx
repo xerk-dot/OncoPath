@@ -1,8 +1,8 @@
 import { Suspense } from "react";
-import Sites from "@/components/providers";
+import Sites from "@/components/sites";
 import PlaceholderCard from "@/components/placeholder-card";
-import CreateProviderButton from "@/components/create-provider-button";
-import CreateProviderModal from "@/components/modal/create-provider";
+import CreateProviderButton from "@/components/create-site-button";
+import CreateProviderModal from "@/components/modal/create-site";
 
 export default function AllProviders({ params }: { params: { id: string } }) {
   return (

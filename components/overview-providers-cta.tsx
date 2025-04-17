@@ -1,6 +1,6 @@
 import { getSession } from "@/lib/auth";
-import CreateProviderButton from "./create-provider-button";
-import CreateProviderModal from "./modal/create-provider";
+import CreateProviderButton from "./create-site-button";
+import CreateProviderModal from "./modal/create-site";
 import Link from "next/link";
 import db from "@/lib/db";
 import { sites } from "@/lib/schema";
