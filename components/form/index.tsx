@@ -12,15 +12,15 @@ import Uploader from "./uploader";
 import va from "@vercel/analytics";
 
 export default function Form({
-  title,
-  description,
-  helpText,
+  title = "Create a Healthcare Provider",
+  description = "Add your healthcare organization details below.",
+  helpText = "Choose a subdomain for your provider portal.",
   inputAttrs,
   handleSubmit,
 }: {
-  title: string;
-  description: string;
-  helpText: string;
+  title?: string;
+  description?: string;
+  helpText?: string;
   inputAttrs: {
     name: string;
     type: string;
