@@ -114,7 +114,7 @@ export default async function SiteHomePage({
               className="hidden dark:block"
             />
             <p className="font-title text-2xl text-stone-600 dark:text-stone-400">
-              No posts yet.
+              No patients yet.
             </p>
           </div>
         )}

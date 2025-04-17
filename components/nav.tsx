@@ -52,7 +52,7 @@ export default function Nav({ children }: { children: ReactNode }) {
     if (segments[0] === "site" && id) {
       return [
         {
-          name: "Back to All Sites",
+          name: "Back to All Providers",
           href: "/sites",
           icon: <ArrowLeft width={18} />,
         },
@@ -78,7 +78,7 @@ export default function Nav({ children }: { children: ReactNode }) {
     } else if (segments[0] === "post" && id) {
       return [
         {
-          name: "Back to All Posts",
+          name: "Back to All Patients",
           href: siteId ? `/site/${siteId}` : "/sites",
           icon: <ArrowLeft width={18} />,
         },
@@ -104,7 +104,7 @@ export default function Nav({ children }: { children: ReactNode }) {
         icon: <LayoutDashboard width={18} />,
       },
       {
-        name: "Sites",
+        name: "Healthcare Providers",
         href: "/sites",
         isActive: segments[0] === "sites",
         icon: <Globe width={18} />,

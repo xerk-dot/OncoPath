@@ -1,10 +1,10 @@
 import { Suspense } from "react";
-import Sites from "@/components/sites";
+import Sites from "@/components/providers";
 import PlaceholderCard from "@/components/placeholder-card";
-import CreateSiteButton from "@/components/create-site-button";
-import CreateSiteModal from "@/components/modal/create-site";
+import CreateProviderButton from "@/components/create-provider-button";
+import CreateProviderModal from "@/components/modal/create-provider";
 
-export default function AllSites({ params }: { params: { id: string } }) {
+export default function AllProviders({ params }: { params: { id: string } }) {
   return (
     <div className="flex max-w-screen-xl flex-col space-y-12 p-8">
       <div className="flex flex-col space-y-6">
@@ -12,9 +12,9 @@ export default function AllSites({ params }: { params: { id: string } }) {
           <h1 className="font-cal text-3xl font-bold dark:text-white">
             All Providers
           </h1>
-          <CreateSiteButton>
-            <CreateSiteModal />
-          </CreateSiteButton>
+          <CreateProviderButton>
+            <CreateProviderModal />
+          </CreateProviderButton>
         </div>
         <Suspense
           fallback={
@@ -26,7 +26,7 @@ export default function AllSites({ params }: { params: { id: string } }) {
           }
         >
           {/* @ts-expect-error Server Component */}
-          <Sites siteId={decodeURIComponent(params.id)} />
+          <Sites providerId={decodeURIComponent(params.id)} />
         </Suspense>
       </div>
     </div>
