@@ -4,19 +4,22 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <div className="flex h-screen flex-col items-center justify-center space-y-10 bg-black">
-      <Image
-        width={512}
-        height={512}
-        src="/logo.png"
-        alt="Platforms on Vercel"
-        className="w-48"
-      />
-      <h1 className="text-white">
-        Edit this page on{" "}
-        <InlineSnippet className="ml-2 bg-blue-900 text-blue-100">
-          app/home/page.tsx
-        </InlineSnippet>
-      </h1>
+      <div className="flex flex-col items-center space-y-4">
+        <Image
+          src="/logo.png"
+          alt="Logo"
+          width={100}
+          height={100}
+          className="rounded-full"
+        />
+        <h1 className="text-4xl font-bold text-white">
+          Welcome to <InlineSnippet>OncoPath</InlineSnippet>
+        </h1>
+        <p className="text-center text-lg text-gray-400">
+          Your platform for managing cancer pathways and research
+        </p>
+      </div>
+
     </div>
   );
 }

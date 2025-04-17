@@ -1,3 +1,7 @@
+## What is a multi-tenant application?
+
+Multi-tenant applications serve multiple customers across different subdomains/custom domains with a single unified codebase.
+
 ## Features
 
 1. **Multi-tenancy:** Programmatically assign unlimited custom domains, subdomains, and SSL certificates to your users using the [Vercel Domains API](https://vercel.com/docs/rest-api/endpoints#domains)
@@ -10,9 +14,7 @@
 8. **Multi-tenant Preview URLs**: Preview changes to your client sites using [Vercel Preview URLs](https://vercel.com/docs/deployments/generated-urls). [Learn more](https://vercel.com/guides/nextjs-multi-tenant-application#3.-multi-tenant-preview-urls).
 
 
-## What is a multi-tenant application?
 
-Multi-tenant applications serve multiple customers across different subdomains/custom domains with a single unified codebase.
 
 ## Built on open source
 
@@ -27,3 +29,13 @@ This working demo site was built using the Platforms Starter Kit and:
 - [NextAuth.js](https://next-auth.js.org/) for authentication
 - [Tremor](https://tremor.so/) for charts
 - [Vercel](http://vercel.com/) for deployment
+
+
+## Important things
+
+This project uses several services that are not HIPAA-compliant by default:
+
+- Vercel hosting - Not HIPAA compliant by default, should need BAA
+- GitHub OAuth - Not HIPAA compliant
+- Vercel Postgres/KV/Blob Storage - Not HIPAA compliant
+- NextAuth.js - Would need special configuration for HIPAA compliance
